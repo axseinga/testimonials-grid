@@ -12,8 +12,8 @@ html {
 
 body {
   background-color: #ecf2f8;
-  /*background-image: url(../design/mobile-design.jpg);
-  background-size: 375px;
+  /*background-image: url(../design/desktop-design.jpg);
+  background-size: 1440px;
   background-repeat: no-repeat;
   opacity: 0.7;*/ }
 
@@ -24,13 +24,26 @@ body {
   width: 100%; }
 
 .component {
-  margin: 7rem 2.5rem; }
+  margin: 7rem 2.5rem;
+  max-width: 500px; }
+  @media only screen and (min-width: 68.75rem) {
+    .component {
+      width: 1100px;
+      max-width: 1100px;
+      display: grid;
+      grid-template-columns: repeat(4, 260px);
+      grid-template-rows: repeat(2, min-content);
+      gap: 20px;
+      grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira"; } }
 
 .card {
   padding: 2.5rem 3rem;
   margin-bottom: 4rem;
   border-radius: 8px;
   box-shadow: 17px 19px 42px -15px rgba(0, 0, 0, 0.17); }
+  @media only screen and (min-width: 68.75rem) {
+    .card {
+      margin-bottom: 0; } }
   .card--main {
     background-image: url(../images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
@@ -43,6 +56,16 @@ body {
     background-color: #48556a; }
   .card--black {
     background-color: #19212e; }
+  .card--grid-1 {
+    grid-area: daniel; }
+  .card--grid-2 {
+    grid-area: jonathan; }
+  .card--grid-3 {
+    grid-area: jeanette; }
+  .card--grid-4 {
+    grid-area: patrick; }
+  .card--grid-5 {
+    grid-area: kira; }
   .card__author {
     display: flex;
     align-items: center;
@@ -78,7 +101,8 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  color: #7541c8; }
 
 .attribution a {
   color: #3e52a3; }
