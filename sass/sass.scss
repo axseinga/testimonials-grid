@@ -32,10 +32,6 @@ html {
 
 body {
   background-color: $color-grey-light-2;
-  /*background-image: url(../design/desktop-design.jpg);
-  background-size: 1440px;
-  background-repeat: no-repeat;
-  opacity: 0.7;*/
 }
 
 .wrapper {
@@ -52,6 +48,7 @@ body {
   @media only screen and (min-width: $bp-desktop) {
     width: 1100px;
     max-width: 1100px;
+    margin-top: 15rem;
     display: grid;
     grid-template-columns: repeat(4, 260px);
     grid-template-rows: repeat(2, min-content);

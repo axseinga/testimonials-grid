@@ -11,11 +11,7 @@ html {
   font-family: "Barlow Semi Condensed", sans-serif; }
 
 body {
-  background-color: #ecf2f8;
-  /*background-image: url(../design/desktop-design.jpg);
-  background-size: 1440px;
-  background-repeat: no-repeat;
-  opacity: 0.7;*/ }
+  background-color: #ecf2f8; }
 
 .wrapper {
   display: flex;
@@ -30,6 +26,7 @@ body {
     .component {
       width: 1100px;
       max-width: 1100px;
+      margin-top: 15rem;
       display: grid;
       grid-template-columns: repeat(4, 260px);
       grid-template-rows: repeat(2, min-content);
