@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [See my code](https://github.com/axseinga/testimonials-grid)
-- Live Site URL: [Check it pout here](https://axseinga.github.io/testimonials-grid/)
+- Live Site URL: [Check it out here](https://axseinga.github.io/testimonials-grid/)
 
 ## My process
 
